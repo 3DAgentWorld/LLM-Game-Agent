@@ -1,0 +1,401 @@
+{
+    "round 1 starts:": [
+        {
+            "Host": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 3、player 4、player 5、player 6、player 1、player 2. player 3 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 3 start to speak please.",
+            "player 3(Merlin)": "\"I have observed player 1 implying being Percival and player 5 implying being a Loyal Servant. Based on my observations, I suspect player 2 is Morgana and player 4 is the Assassin. However, I am cautious about revealing my role at this point. For the turn 1 quest, I suggest considering players who have shown dedication and trustworthiness in previous games. Let's choose candidates who have not raised any suspicions during our conversation and who can contribute positively to the quest. This will help ensure the success of the good side.\"",
+            "response_rule": {
+                "type": "number",
+                "count": "2"
+            }
+        },
+        {
+            "Host": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 3、player 4、player 5、player 6、player 1、player 2. player 3 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 4 start to speak please.",
+            "player 4(Assassin)": "I suggest that player 3 and player 5 should be the candidates for the turn 1 quest. Player 3 has shown dedication and trustworthiness in previous games, and their cautiousness about revealing their role indicates that they may be a good role. Player 5 has not raised any suspicions during the conversation and seems to be a reliable player. By recommending myself and player 5 for the quest, I can strategically let the quest fail and create doubt among the players. This will help me identify potential Merlin candidates and increase our chances of successfully assassinating Merlin in future rounds.",
+            "response_rule": {
+                "type": "number",
+                "count": "2"
+            }
+        },
+        {
+            "Host": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 3、player 4、player 5、player 6、player 1、player 2. player 3 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 5 start to speak please.",
+            "player 5(Loyal Servant)": "\"As the Loyal Servant, I believe it is important for us to be cautious about revealing our roles. Based on my observation, player 1 implied being Percival and player 5 implied being a Loyal Servant. I suspect player 2 is Morgana and player 4 is the Assassin. However, I am cautious about revealing my role at this point. Let's gather more information and discuss the candidates for the turn 1 quest based on their dedication, trustworthiness, and lack of suspicion raised during our conversation. This will help ensure the success of the good side.\"",
+            "response_rule": {
+                "type": "number",
+                "count": "2"
+            }
+        },
+        {
+            "Host": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 3、player 4、player 5、player 6、player 1、player 2. player 3 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 6 start to speak please.",
+            "player 6(Loyal Servant)": "\"As the Loyal Servant, I have observed player 1 implying being Percival and player 5 implying being a Loyal Servant. I have suspicions about player 2 being Morgana due to their suspicious behavior. However, I am cautious about revealing my role at this point. For the turn 1 quest, I suggest considering players who have not raised any suspicions and have shown dedication and trustworthiness in previous games. Let's choose candidates who can contribute positively to the quest and help ensure the success of the good side.\"",
+            "response_rule": {
+                "type": "number",
+                "count": "2"
+            }
+        },
+        {
+            "Host": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 3、player 4、player 5、player 6、player 1、player 2. player 3 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 1 start to speak please.",
+            "player 1(Morgana)": "Thank you, Host. As player 1, I would like to recommend myself as a candidate for the turn 1 quest. I have always been dedicated and trustworthy in previous games, and I believe I can contribute to the success of this quest. Additionally, I suggest considering player 4 for the quest. They have also shown dedication and trustworthiness in previous games. Together, we can form a strong team to ensure the success of the quest. Thank you.",
+            "response_rule": {
+                "type": "number",
+                "count": "2"
+            }
+        },
+        {
+            "Host": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 3、player 4、player 5、player 6、player 1、player 2. player 3 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+            "player 2(Percival)": "\"As Percival, I suggest that for the turn 1 quest, we consider players who have not raised any suspicions and have shown dedication and trustworthiness in previous games. Let's choose candidates who can contribute positively to the quest and help ensure the success of the good side. Thank you.\"",
+            "response_rule": {
+                "type": "number",
+                "count": "2"
+            }
+        },
+        {
+            "Host": "Please finally confirm 2 players who will engage in the quest. Please answer the numbers of the players you selected.",
+            "player 3(Merlin)": "\"I have carefully considered the candidates for the turn 1 quest. Based on their dedication, trustworthiness, and lack of suspicion, I select player 1 and player 6 to engage in the quest.\"",
+            "response_rule": {
+                "type": "number",
+                "count": "2"
+            }
+        },
+        {
+            "Host": "The quest leader decides that the player 1、player 6 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+            "player 1(Morgana)": "Disagree",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "The quest leader decides that the player 1、player 6 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+            "player 2(Percival)": "I vote to agree.",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "The quest leader decides that the player 1、player 6 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+            "player 3(Merlin)": "I vote to agree.",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "The quest leader decides that the player 1、player 6 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+            "player 4(Assassin)": "agree",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "The quest leader decides that the player 1、player 6 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+            "player 5(Loyal Servant)": "I vote to disagree.",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "The quest leader decides that the player 1、player 6 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+            "player 6(Loyal Servant)": "I vote to agree.",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "As the players who engage in the quest in this turn, you can choose to succeed or fail the quest. If all players engaging in the quest choose the quest to succeed, the good side will get one point. If any player chooses the quest to fail, the evil side will get one point. Please choose.",
+            "player 1(Morgana)": "I choose to make the quest fail.",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "As the players who engage in the quest in this turn, you can choose to succeed or fail the quest. If all players engaging in the quest choose the quest to succeed, the good side will get one point. If any player chooses the quest to fail, the evil side will get one point. Please choose.",
+            "player 6(Loyal Servant)": "\"As the Loyal Servant, I suggest that we choose to succeed the quest. Based on my observations, player 1 implied being Percival, player 2 is likely Morgana, player 4 is likely the Assassin, and player 5 implied being a Loyal Servant. Let's consider players who have not raised any suspicions and have shown dedication and trustworthiness in previous games. By choosing candidates who can contribute positively to the quest, we can increase the chances of success for the good side.\"",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "Among the players who engaged in the quest, there were 1 player making quest fail and the quest failed."
+        },
+        {
+            "Host": "You have one chance to identify Merlin in the game. If the identification is correct, the evil side will directly win. If the identification fails, you will be exposed as an assassin and can't identify Merlin again. Do you want to identify Merlin? Answer yes or no.",
+            "player 4(Assassin)": "no",
+            "response_rule": {
+                "type": "bool"
+            }
+        }
+    ],
+    "round 2 starts:": [
+        {
+            "Host": "Please start discussing the candidates for the turn 2 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 3, and the order of each player's speech is player 4、player 5、player 6、player 1、player 2、player 3. player 4 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 4 start to speak please.",
+            "player 4(Assassin)": "For the turn 2 quest, I suggest player 1 and player 3 as the candidates. Player 1 has shown dedication and trustworthiness in previous games, and their recommendation for the previous quest demonstrates their commitment to the success of the team. Player 3's emphasis on caution in revealing roles indicates their understanding of the importance of secrecy. By including both of them in the quest, we can create doubt and confusion among the players, increasing the chances of the quest failing. This will allow us to gather more information and potentially identify Merlin.",
+            "response_rule": {
+                "type": "number",
+                "count": "3"
+            }
+        },
+        {
+            "Host": "Please start discussing the candidates for the turn 2 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 3, and the order of each player's speech is player 4、player 5、player 6、player 1、player 2、player 3. player 4 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 5 start to speak please.",
+            "player 5(Loyal Servant)": "\"As the Loyal Servant, I suggest that for the turn 2 quest, we consider players who have shown dedication, trustworthiness, and lack of suspicion. Based on my observations, player 1 implied being Percival and player 5 implied being a Loyal Servant. I suspect player 2 is Morgana and player 4 is the Assassin. Let's discuss and consider the options together to ensure the success of the quest and the victory of the good side.\"",
+            "response_rule": {
+                "type": "number",
+                "count": "3"
+            }
+        },
+        {
+            "Host": "Please start discussing the candidates for the turn 2 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 3, and the order of each player's speech is player 4、player 5、player 6、player 1、player 2、player 3. player 4 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 6 start to speak please.",
+            "player 6(Loyal Servant)": "\"As the Loyal Servant, I suggest that for the turn 2 quest, we consider players who have shown dedication, trustworthiness, and have not raised suspicions. Based on our previous observations, player 1 implied being Percival, player 2 is suspected of being Morgana, and player 4 is suspected of being the Assassin. Let's choose candidates who can contribute positively to the quest and increase the chances of success for the good side. I encourage players 4, 5, and 6 to discuss their dedication and trustworthiness, and let's collectively decide on the best candidates for the quest.\"",
+            "response_rule": {
+                "type": "number",
+                "count": "3"
+            }
+        },
+        {
+            "Host": "Please start discussing the candidates for the turn 2 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 3, and the order of each player's speech is player 4、player 5、player 6、player 1、player 2、player 3. player 4 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 1 start to speak please.",
+            "player 1(Morgana)": "Thank you, Host. As we discuss the candidates for the turn 2 quest, I would like to suggest player 4, player 5, and player 6 as the candidates. Player 4 has consistently shown dedication and trustworthiness in previous games, making them a reliable choice for the quest. Player 5 has echoed player 4's suggestions and emphasized the importance of caution in revealing roles, indicating their understanding of the need for secrecy. Player 6 has also emphasized dedication and trustworthiness, and their agreement with player 4's suggestions further strengthens their credibility. By including all three players in the quest, we can create doubt and confusion among the players, increasing the chances of the quest failing and potentially identifying Merlin. Thank you for considering my suggestion.",
+            "response_rule": {
+                "type": "number",
+                "count": "3"
+            }
+        },
+        {
+            "Host": "Please start discussing the candidates for the turn 2 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 3, and the order of each player's speech is player 4、player 5、player 6、player 1、player 2、player 3. player 4 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+            "player 2(Percival)": "\"As Percival, I have observed player 1 and player 3 implying their roles as Merlin and Morgana respectively. However, I believe it is best for me to withhold my own role information for now to avoid giving away important information. In choosing the candidates for the turn 2 quest, I suggest considering players who have shown dedication, trustworthiness, and have not raised any suspicions. Let's discuss and consider the options together to ensure the success of the quest and the victory of the good side.\"",
+            "response_rule": {
+                "type": "number",
+                "count": "3"
+            }
+        },
+        {
+            "Host": "Please start discussing the candidates for the turn 2 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 3, and the order of each player's speech is player 4、player 5、player 6、player 1、player 2、player 3. player 4 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 3 start to speak please.",
+            "player 3(Merlin)": "\"As the Merlin, I have observed that player 1 implied being Percival and player 5 implied being a Loyal Servant. Considering the current situation, I suggest that player 1 and player 5 should be the candidates for the turn 2 quest. Player 1 has shown dedication and trustworthiness, and player 5 has not raised any suspicions during our conversation. By including them in the quest, we can increase the chances of the quest failing and potentially expose the evil players. I encourage all players to carefully consider this suggestion and discuss openly to ensure the success of the quest and the victory of the good side.\"",
+            "response_rule": {
+                "type": "number",
+                "count": "3"
+            }
+        },
+        {
+            "Host": "The quest leader decides that the player 1、player 3 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+            "player 1(Morgana)": "disagree",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "The quest leader decides that the player 1、player 3 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+            "player 2(Percival)": "I vote to agree.",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "The quest leader decides that the player 1、player 3 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+            "player 3(Merlin)": "\"I vote to agree with the selection of player 1 and player 3 for the quest. Player 1 has demonstrated loyalty and player 3 has emphasized caution in revealing roles, indicating their understanding of the importance of secrecy. By including both of them in the quest, we can create doubt and confusion among the players, increasing the chances of the quest failing and potentially exposing the evil players. Let's proceed with caution and prioritize the success of the good side.\"",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "The quest leader decides that the player 1、player 3 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+            "player 4(Assassin)": "agree",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "The quest leader decides that the player 1、player 3 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+            "player 5(Loyal Servant)": "I vote to agree for player 1 and player 3 to engage in the quest.",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "The quest leader decides that the player 1、player 3 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+            "player 6(Loyal Servant)": "I vote to agree.",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "As the players who engage in the quest in this turn, you can choose to succeed or fail the quest. If all players engaging in the quest choose the quest to succeed, the good side will get one point. If any player chooses the quest to fail, the evil side will get one point. Please choose.",
+            "player 6(Loyal Servant)": "\"As the Loyal Servant, I believe it is crucial for us to carefully consider the candidates for the turn 2 quest. Based on my observations, player 1 has shown dedication and player 5 has not raised any suspicions. Let's choose candidates who have demonstrated trustworthiness and dedication to the success of the good side. By selecting players who have not shown clear indications of being Morgana or the Assassin, we can increase the chances of the quest succeeding. I vote for the quest to succeed.\"",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "As the players who engage in the quest in this turn, you can choose to succeed or fail the quest. If all players engaging in the quest choose the quest to succeed, the good side will get one point. If any player chooses the quest to fail, the evil side will get one point. Please choose.",
+            "player 5(Loyal Servant)": "\"As a Loyal Servant, I have observed player 2 being suspected of being Morgana and player 4 being suspected of being the Assassin. To ensure the success of the quests and the victory of the good side, I choose to fail the quest in this turn.\"",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "As the players who engage in the quest in this turn, you can choose to succeed or fail the quest. If all players engaging in the quest choose the quest to succeed, the good side will get one point. If any player chooses the quest to fail, the evil side will get one point. Please choose.",
+            "player 4(Assassin)": "As the Assassin, I choose to make the quest fail.",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "Among the players who engaged in the quest, there were 2 players making quest fail and the quest failed."
+        },
+        {
+            "Host": "You have one chance to identify Merlin in the game. If the identification is correct, the evil side will directly win. If the identification fails, you will be exposed as an assassin and can't identify Merlin again. Do you want to identify Merlin? Answer yes or no.",
+            "player 4(Assassin)": "no",
+            "response_rule": {
+                "type": "bool"
+            }
+        }
+    ],
+    "round 3 starts:": [
+        {
+            "Host": "Please start discussing the candidates for the turn 3 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 4, and the order of each player's speech is player 5、player 6、player 1、player 2、player 3、player 4. player 5 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 5 start to speak please.",
+            "player 5(Loyal Servant)": "\"As the Loyal Servant, I suggest that for the turn 3 quest, we consider players who have shown dedication, trustworthiness, and have not raised any suspicions. Based on our previous observations, player 1 implied being Percival, player 2 is likely Morgana, and player 4 is likely the Assassin. Let's choose candidates who can contribute positively to the quest and increase the chances of success for the good side. I encourage players 5, 6, 1, and 3 to discuss their dedication and trustworthiness, and let's collectively decide on the best candidates for the quest.\"",
+            "response_rule": {
+                "type": "number",
+                "count": "4"
+            }
+        },
+        {
+            "Host": "Please start discussing the candidates for the turn 3 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 4, and the order of each player's speech is player 5、player 6、player 1、player 2、player 3、player 4. player 5 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 6 start to speak please.",
+            "player 6(Loyal Servant)": "\"As the Loyal Servant, I suggest that for the turn 3 quest, we consider players who have shown dedication, trustworthiness, and have not raised any suspicions. Based on our previous observations, player 1 implied being Percival and player 5 implied being a Loyal Servant. Let's choose candidates who can contribute positively to the quest and increase the chances of success for the good side. I encourage players 5, 6, 1, and 2 to discuss their dedication and trustworthiness, and let's collectively decide on the best candidates for the quest.\"",
+            "response_rule": {
+                "type": "number",
+                "count": "4"
+            }
+        },
+        {
+            "Host": "Please start discussing the candidates for the turn 3 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 4, and the order of each player's speech is player 5、player 6、player 1、player 2、player 3、player 4. player 5 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 1 start to speak please.",
+            "player 1(Morgana)": "Thank you, Host. For the turn 3 quest, I would like to suggest player 5, player 6, player 1, and player 2 as the candidates. \n\nPlayer 5 has consistently shown dedication and trustworthiness throughout the previous rounds, and their suggestions have been insightful. Player 6 has also demonstrated loyalty and commitment, and their contributions to the discussions have been valuable. As for myself, player 1, I have consistently recommended myself as a candidate for the quests, highlighting my dedication and trustworthiness. Lastly, player 2, as Percival, has observed the actions and suggestions of other players without revealing their own role, which can be beneficial for the success of the quest.\n\nI believe that this combination of players will provide a strong and balanced team for the quest. Their dedication, trustworthiness, and ability to contribute positively to the discussions make them suitable candidates. I hope that player 5, as the one with the power to decide, will consider these factors when making the final decision. Thank you.",
+            "response_rule": {
+                "type": "number",
+                "count": "4"
+            }
+        },
+        {
+            "Host": "Please start discussing the candidates for the turn 3 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 4, and the order of each player's speech is player 5、player 6、player 1、player 2、player 3、player 4. player 5 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+            "player 2(Percival)": "\"As Percival, I suggest that for the turn 3 quest, we consider players who have shown dedication, trustworthiness, and have not raised any suspicions. Based on our previous observations, player 1 has implied being Percival and player 5 has implied being a Loyal Servant. Let's choose candidates who can contribute positively to the quest and increase the chances of success for the good side. I encourage players 5, 6, 1, and 3 to discuss their dedication and trustworthiness, and let's collectively decide on the best candidates for the quest.\"",
+            "response_rule": {
+                "type": "number",
+                "count": "4"
+            }
+        },
+        {
+            "Host": "Please start discussing the candidates for the turn 3 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 4, and the order of each player's speech is player 5、player 6、player 1、player 2、player 3、player 4. player 5 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 3 start to speak please.",
+            "player 3(Merlin)": "\"As the Merlin, I have observed that player 1 implied being Percival and player 5 implied being a Loyal Servant. Based on my observations, I suspect player 2 is Morgana and player 4 is the Assassin. However, I am cautious about revealing my role at this point to ensure the success of the good side. For the turn 3 quest, I suggest considering players who have shown dedication, trustworthiness, and have not raised any suspicions. Let's proceed with caution and prioritize the success of the good side by choosing candidates who can contribute positively to the quest.\"",
+            "response_rule": {
+                "type": "number",
+                "count": "4"
+            }
+        },
+        {
+            "Host": "Please start discussing the candidates for the turn 3 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 4, and the order of each player's speech is player 5、player 6、player 1、player 2、player 3、player 4. player 5 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 4 start to speak please.",
+            "player 4(Assassin)": "Player 4: I suggest choosing player 2 and player 6 for the quest. Both players have shown dedication and trustworthiness in previous discussions and have not raised any suspicions. Player 2, as Percival, has been observant and cautious in revealing their role, which indicates their commitment to the team's success. Player 6 has also emphasized the importance of choosing candidates who can contribute positively to the quest. By including both of them, we can ensure a strong and reliable team for this quest.",
+            "response_rule": {
+                "type": "number",
+                "count": "4"
+            }
+        },
+        {
+            "Host": "Please finally confirm 4 players who will engage in the quest. Please answer the numbers of the players you selected.",
+            "player 5(Loyal Servant)": "\"I suggest that player 1, player 3, player 5, and player 6 should engage in the quest for round 3.\"",
+            "response_rule": {
+                "type": "number",
+                "count": "2"
+            }
+        },
+        {
+            "Host": "The quest leader decides that the player 1、player 3、player 5、player 6 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+            "player 1(Morgana)": "disagree",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "The quest leader decides that the player 1、player 3、player 5、player 6 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+            "player 2(Percival)": "I vote to agree.",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "The quest leader decides that the player 1、player 3、player 5、player 6 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+            "player 3(Merlin)": "\"I vote to agree with the selection of player 1, player 3, player 5, and player 6 for the quest. Player 1 has demonstrated loyalty, player 5 has implied being a Loyal Servant, and their inclusion in the quest increases the chances of success. However, I remain cautious about revealing my role and will continue to strategize to guide the good side to victory.\"",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "The quest leader decides that the player 1、player 3、player 5、player 6 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+            "player 4(Assassin)": "disagree",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "The quest leader decides that the player 1、player 3、player 5、player 6 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+            "player 5(Loyal Servant)": "\"I vote to agree with the quest leader's decision for player 1, player 3, player 5, and player 6 to engage in the quest. Based on the previous discussions, these players have shown dedication, trustworthiness, and have not raised any suspicions. Let's proceed with this selection and work together to ensure the success of the quest.\"",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "The quest leader decides that the player 1、player 3、player 5、player 6 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+            "player 6(Loyal Servant)": "I vote to agree.",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "As the players who engage in the quest in this turn, you can choose to succeed or fail the quest. If all players engaging in the quest choose the quest to succeed, the good side will get one point. If any player chooses the quest to fail, the evil side will get one point. Please choose.",
+            "player 1(Morgana)": "I choose to make the quest fail.",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "As the players who engage in the quest in this turn, you can choose to succeed or fail the quest. If all players engaging in the quest choose the quest to succeed, the good side will get one point. If any player chooses the quest to fail, the evil side will get one point. Please choose.",
+            "player 3(Merlin)": "\"As the Merlin, I suggest that all players engaging in the quest choose the quest to succeed. It is important for us to work together and prioritize the success of the quest to prevent the evil side from gaining a point. Let's consider candidates who have shown dedication, trustworthiness, and lack of suspicion to increase the chances of success for the good side.\"",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "As the players who engage in the quest in this turn, you can choose to succeed or fail the quest. If all players engaging in the quest choose the quest to succeed, the good side will get one point. If any player chooses the quest to fail, the evil side will get one point. Please choose.",
+            "player 5(Loyal Servant)": "\"As a Loyal Servant, I choose to make the quest succeed. It is crucial for us to work together and ensure the success of the good side. Let's focus on completing the quest and preventing the evil side from gaining points.\"",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "As the players who engage in the quest in this turn, you can choose to succeed or fail the quest. If all players engaging in the quest choose the quest to succeed, the good side will get one point. If any player chooses the quest to fail, the evil side will get one point. Please choose.",
+            "player 6(Loyal Servant)": "\"I choose to make the quest succeed, as it is important for the good side to gain a point. Let's work together and ensure the success of the quest.\"",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "Among the players who engaged in the quest, there were 1 player making quest fail and the quest failed."
+        },
+        {
+            "Host": "You have one chance to identify Merlin in the game. If the identification is correct, the evil side will directly win. If the identification fails, you will be exposed as an assassin and can't identify Merlin again. Do you want to identify Merlin? Answer yes or no.",
+            "player 4(Assassin)": "Yes",
+            "response_rule": {
+                "type": "bool"
+            }
+        },
+        {
+            "Host": "Select the player you want to identify please.",
+            "player 4(Assassin)": "Player 2",
+            "response_rule": {
+                "type": "number",
+                "count": "1"
+            }
+        },
+        {
+            "Host": "player 4(Assassin) chooses to identify player 2 as Merlin, but the identification failed."
+        },
+        {
+            "Host": "Evil Side wins."
+        }
+    ]
+}
