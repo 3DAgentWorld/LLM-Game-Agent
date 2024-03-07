@@ -1,0 +1,211 @@
+{
+  "player_nums": [5,6,7,8,9,10,11,12],
+  "english": {
+    "role_mapping": {
+      "merlin": "Merlin",
+      "percival": "Percival",
+      "loyal servant": "Loyal Servant",
+      "morgana": "Morgana",
+      "assassin": "Assassin",
+      "blue lancelot": "Blue Lancelot",
+      "red lancelot": "Red Lancelot",
+      "mordred": "Mordred",
+      "oberon": "Oberon"
+    },
+      "role_introduce": {
+      "merlin": "The player who receives the Merlin card belongs to good side. Merlin has the crucial ability to identify the evil minions but must remain subtle, as if the evil team discovers Merlin's identity, they may target Merlin for elimination.",
+      "assassin": "The player who receives the Assassin card belongs to evil side. The Assassin plays a pivotal role in the evil team, as they have the final say on the target for assassination. If the evil team successfully identifies Merlin, the Assassin can secure victory by correctly naming Merlin at the end of the game.",
+      "percival": "The player who receives the Percival card belongs to good side. Percival starts the game with knowledge of which other player is Merlin. Alternatively, if Morgana is also used, Percival sees both Merlin and Morgana but doesn't know which is which. Percival's challenge is to navigate the uncertainty and assist the good team based on the limited information provided.",
+      "morgana": "The player who receives the Morgana card belongs to of evil side. Morgana's special ability only comes into play if Percival is also in play, in which case she reveals herself as Merlin (alongside the \"real\" Merlin) when Percival opens his eyes during setup. This adds a layer of deception to the game, as Percival must discern the true Merlin amidst the conflicting claims.",
+      "loyal servant": "The player who receives Loyal Servant card belongs to good side. They lack special abilities but are essential for the success of the good team, as their votes and actions contribute to the majority needed for quest success."
+      },
+    "config_5": {
+      "game_introduce": "",
+      "role": []
+    },
+    "config_6": {
+      "game_introduce": "Game Setup:\nAvalon is played with six players, each assuming a specific role: Merlin, Percival, 2 Loyalists, Morgana, and the Assassin. The characters aligned with the good side include Merlin, Percival, and the Loyalists, while those aligned with the evil side are Morgana and the Assassin. At the beginning of the game, all players close their eyes, and members of the evil side confirm each other's identities. Following this, characters with special abilities open their eyes in sequence, revealing their identity to each other before the game begins.\n\nVictory Conditions:\nGood Side: Win three out of five quests and protect Merlin from the discovery by the evil side.\nEvil Side: Win three out of five quests or identify Merlin. If the evil side loses (the good side wins three out of five quests), they have one last chance to survive—guess Merlin's identity and send an \"assassin\" to eliminate him. If the assassinated player is indeed Merlin, the evil side turns defeat into victory.\n\nGame Round:\nIn each round, the player to the left of the previous quest leader becomes the new quest leader. Starting from quest 1, the quest leader selects a certain number of players to \"embark on the quest\" (the quest leader can choose themselves). After the leader selects the quest participants, all players discuss the suitability of the chosen players for the quest and simultaneously vote. If half or more of the players reject the quest team proposed by the current leader, leadership automatically passes to the next player, who then selects a team and receives votes. This process repeats until a majority approves the quest team. If five consecutive quests are rejected, the evil side automatically wins. Once the quest team is determined, players proceed to \"embark on the quest.\" Each quest participant receives two quest cards—one for success and one for failure. Members of the good side must return the success card face down, indicating success. On the other hand, players aligned with the evil side can choose to return either a success or a failure card, providing them the option to succeed or sabotage the quest. After shuffling the cards, if all cards reveal \"quest successful,\" the good side earns one point. Conversely, if there is at least one failure card (even if there are multiple), the evil side scores one point. The number of players required for each quest is as follows: {Quest 1: 2, Quest 2: 3, Quest 3: 4, Quest 4: 3, Quest 5: 4}.\n",
+      "role": ["Merlin","Percival","Loyal Servant","Loyal Servant", "Morgana","Assassin"],
+      "blue_camp": ["Merlin","Percival","Loyal Servant"],
+      "red_camp": ["Morgana","Assassin"],
+      "task_member": {
+        "1":2, "2":3, "3":4, "4":3, "5":4
+      }
+    },
+    "config_7": {
+      "game_introduce": "",
+      "role": []
+    },
+    "config_8": {
+      "game_introduce": "",
+      "role": []
+    },
+    "config_9": {
+      "game_introduce": "",
+      "role": []
+    },
+    "config_10": {
+      "game_introduce": "",
+      "role": []
+    },
+    "config_11": {
+      "game_introduce": "",
+      "role": []
+    },
+    "config_12": {
+      "game_introduce": "",
+      "role": []
+    },
+    "host_instruction": {
+      "system_prompt": "Never forget that you are a veteran Avalon gamer, you play the game utilizing various Avalon strategies, and I am the game moderator. Never flip roles! Never mentor me! Also never forget that there are other players like you and we will talk together.\nYou must follow my instructions. The following is the game introduction: {}",
+      "start_game_prompt": "The game begins. You are {} and have acquired the role {}. You don't know the other people's roles, but you can call them {}. Don't forget your game goals. You can answer <Silence> when you hear a command but do not need to take any action or speak.",
+      "close_eye_prompt1": "All players close your eyes please.",
+      "close_eye_prompt2": "{} close your eyes please.",
+      "open_eye_prompt1": "All players open your eyes please.",
+      "open_eye_prompt2": "{} open your eyes please.",
+      "hand_up_prompt1": "{} raise your hand please.",
+      "hand_up_prompt2": "{} raise your hand please. {} put your hands down please.",
+      "seen_prompt1": "You can see {} opening eyes.",
+      "seen_prompt2": "You can see {} raising hands.",
+      "red_camp_step": "{} open your eyes and confirm your teammates please.",
+      "merlin_step": "Merlin open your eyes please, and Morgana and the Assassin raise your hands please.",
+      "percival_step":"Percival open your eyes please, and Merlin and the Morgana raise your hands please.",
+      "hand_down_prompt": "Merlin and Morgana put your hands down please.",
+      "discuss_prompt3": "Please start an open discussion about which players can and cannot engage in quests (please explain your reasoning appropriately). The number of players in this quest is {}, and the order of each player's speech is {}. {} has the power to decide which players will ultimately engage in the quest.",
+      "discuss_prompt": "Please start discussing the candidates for the turn {} quest (please explain the reasons for your choice appropriately). The number of players in this quest is {}, and the order of each player's speech is {}. {} has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.",
+      "discuss_prompt2": "{} start to speak please.",
+      "task_member_decision": "Please finally confirm {} players who will engage in the quest. Please answer the numbers of the players you selected.",
+      "vote_step": "The quest leader decides that the {} will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+      "vote_summary": "The voting status of each player is as follows: {}",
+      "vote_again": "For the current quest candidate, the number of approval votes does not exceed 1/2. Please discuss the quest candidate again.",
+      "execute_step": "As the players who engage in the quest in this turn, you can choose to succeed or fail the quest. If all players engaging in the quest choose the quest to succeed, the good side will get one point. If any player chooses the quest to fail, the evil side will get one point. Please choose.",
+      "kill_step1": "You have one chance to identify Merlin in the game. If the identification is correct, the evil side will directly win. If the identification fails, you will be exposed as an assassin and can't identify Merlin again. Do you want to identify Merlin? Answer yes or no.",
+      "kill_step2": "Select the player you want to identify please.",
+      "kill_success": "{}(Assassin) chooses to identify {} as Merlin, and the identification is successful.",
+      "kill_fail": "{}(Assassin) chooses to identify {} as Merlin, but the identification failed.",
+      "task_success": "quest successful.",
+      "task_fail": "Among the players who engaged in the quest, there were {} making quest fail and the quest failed."
+    },
+    "response_rule": {
+      "discuss_prompt3": {
+        "type": "number",
+        "count": "{}"
+      },
+      "discuss_prompt": {
+        "type": "number",
+        "count": "{}"
+      },
+      "discuss_prompt2": {
+        "type": "number",
+        "count": "{}"
+      },
+      "task_member_decision": {
+        "type": "number",
+        "count": "{}"
+      },
+      "vote_step": {
+        "type": "bool"
+      },
+      "execute_step": {
+        "type": "bool"
+      },
+      "kill_step1": {
+        "type": "bool"
+      },
+      "kill_step2": {
+        "type": "number",
+        "count": "1"
+      }
+    }
+  },
+  "chinese": {
+    "role_mapping": {
+      "merlin": "梅林",
+      "percival": "派西维尔",
+      "loyal servant": "忠臣",
+      "morgana": "莫甘娜",
+      "assassin": "刺客",
+      "blue lancelot": "蓝兰斯洛特",
+      "red lancelot": "红兰斯洛特",
+      "mordred": "莫德雷德",
+      "oberon": "奥伯伦"
+    },
+    "role_introduce": {
+      "merlin": "初始看见除莫德雷德外的所有坏人",
+      "percival": "初始看见梅林和莫甘娜",
+      "loyal servant": "无特殊能力好人",
+      "morgana": "假扮梅林，迷惑派西维尔",
+      "assassin": "任意时刻，或者在好人阵型3次任务成功后，拍板决定刺杀对象，如选中，坏人胜利。",
+      "blue lancelot": "知道红兰斯洛特身份，但身份可能与其互换。",
+      "red lancelot": "看不到其他红队，但除奥伯伦之外的红队知道兰斯洛特身份，知道蓝兰斯洛特身份，但身份可能与其互换。",
+      "mordred": "不被梅林看到",
+      "oberon": "看不到其他红队，其他红队也看不到他"
+    },
+    "config_5": {
+      "game_introduce": "",
+      "role": ["梅林","派西维尔","忠臣", "莫甘娜","刺客"]
+    },
+    "config_6": {
+      "game_introduce": "以下是游戏规则介绍：\n阿瓦隆游戏中有6个玩家，每个玩家都会扮演特定的角色：梅林、派西维尔、2个忠臣、莫甘娜和刺客。其中属于蓝色阵营的角色有：梅林、派西维尔和忠臣；属于红色阵营的角色有：莫甘娜和刺客。游戏在一开始会让全体玩家闭眼，然后红色阵营互相确认身份闭眼后，各特殊能力者依次睁开眼睛，被选定的角色（们）举手（或者伸出大拇指，但不睁开眼睛）来告诉特殊能力者自己的身份，之后才开始游戏。\n\n胜利条件\n蓝色阵营：五局三胜，并且保护梅林不被红色阵营发现。\n红色阵营：五局三胜，或者找出梅林。如果红色阵营输掉游戏（蓝色阵营五局里面胜出三局）的话，他们还有最后一线生机——猜测梅林是谁并且派出“刺客”刺杀他。如果邪恶阵营刺杀的玩家所扮演的角色确实是梅林的话，邪恶阵营就会反败为胜。\n\n游戏回合\n在每一回合的游戏中，坐在前一轮任务首领左侧的玩家自动成为新一任任务首领。从任务1开始，任务首领会选出一定数量的玩家“执行任务”（任务首领可以派自己执行任务）。在首领选完需要执行任务的玩家后，全体玩家开始讨论这位首领选出的玩家是不是适合执行任务，并同时投票作出表决。如果一半及以上的玩家否决了本回合首领任命的人选，那么任务首领位置自动顺位传给下一位担任任务首领的玩家，然后再选人、表决。这一过程会一直重复，直到投票表决中多数人都认可任务首领的任务人选为止。如果连续五次任务人选都被否决，那么红色阵营自动赢得本次游戏的胜利。当执行任务的人选被确定下来之后，玩家会“执行任务”。每一位执行任务的玩家都会得到两张任务牌——一张代表任务成功，另一张代表任务失败。蓝色阵营的成员必须交回任务成功的卡片，卡片正面朝下。这代表蓝色阵营的成员执行任务一定会让成功。与此相反，属于红色阵营的玩家可以从任务成功、任务失败中选择一张卡片交回，代表坏人既可让任务失败，也可让任务成功。随后，打乱卡片顺序并清点卡片。如果全部卡片都是“任务成功”，那么蓝色阵营才会得一分；反之，只要有一个红色阵营让任务失败（也可能有两个或以上），那么说明红色阵营破坏了这次任务，得一分。每次执行任务所需玩家数量如下：{任务1：2, 任务2：3, 任务3：2, 任务4：3, 任务5：3}",
+      "role": ["梅林","派西维尔","忠臣","忠臣", "莫甘娜","刺客"],
+      "blue_camp": ["梅林","派西维尔","忠臣"],
+      "red_camp": ["莫甘娜","刺客"],
+      "task_member": {
+        "1":2, "2":3, "3":2, "4":3, "5":3
+      }
+    },
+    "config_7": {
+      "game_introduce": "",
+      "role": ["梅林","派西维尔","忠臣","忠臣", "莫甘娜","刺客","奥伯伦"]
+    },
+    "config_8": {
+      "game_introduce": "",
+      "role": ["梅林","派西维尔","忠臣","忠臣","忠臣", "莫甘娜","刺客","爪牙"]
+    },
+    "config_9": {
+      "game_introduce": "",
+      "role": ["梅林","派西维尔","忠臣","忠臣","忠臣","忠臣", "莫德雷德","刺客","莫甘娜"]
+    },
+    "config_10": {
+      "game_introduce": "",
+      "role": ["梅林","派西维尔","忠臣","忠臣","忠臣","忠臣", "莫德雷德","刺客","莫甘娜","奥伯伦"]
+    },
+    "config_11": {
+      "game_introduce": "",
+      "role": ["梅林","派西维尔","忠臣","忠臣","忠臣","忠臣","兰斯洛特（蓝）","莫德雷德","刺客","莫甘娜","兰斯洛特（红）"]
+    },
+    "config_12": {
+      "game_introduce": "",
+      "role": ["梅林","派西维尔","忠臣","忠臣","忠臣","忠臣","兰斯洛特（蓝）","莫德雷德","刺客","莫甘娜","兰斯洛特（红）","奥伯伦"]
+    },
+    "host_instruction": {
+      "system_prompt": "永远不要忘记你是一名资深的阿瓦隆游戏玩家，你会利用各种阿瓦隆的策略进行游戏，而我是游戏主持人。永远不要翻转角色！永远不要指导我！也永远不要忘记还有其他和你一样的玩家，我们将一起讨论。\n你必须听从我的指示。以下是游戏介绍：{}",
+      "start_game_prompt": "游戏开始了。你是{}，获得了角色{}。你不知道其他人的角色，但可以称呼他们为{}。不要忘记你的游戏目标。当你听到指令但不需要做出任何动作或者发言时，你可以用<沉默>。",
+      "close_eye_prompt1": "请所有玩家闭眼。",
+      "close_eye_prompt2": "请{}闭眼。",
+      "open_eye_prompt1": "所有玩家请睁眼。",
+      "open_eye_prompt2": "{}请睁眼。",
+      "hand_up_prompt1": "{}请举手。",
+      "hand_up_prompt2": "{}请举手。{}请放下手。",
+      "seen_prompt1": "你可以看见{}睁眼。",
+      "seen_prompt2": "你可以看见{}举手。",
+      "red_camp_step": "请{}睁眼，确认队友。",
+      "merlin_step": "请梅林睁眼，莫甘娜和刺客举手。",
+      "percival_step":"请派西维尔睁眼，梅林和莫甘娜举手。",
+      "hand_down_prompt": "梅林和莫甘娜请放下手。",
+      "discuss_prompt3": "请大家开始公开讨论，选择哪些玩家可以执行任务，哪些玩家不可以执行任务(请适当说明你的推理过程)。本次任务人数为{}，各玩家发言顺序为{}，{}有权力决定最终由哪些玩家执行任务。",
+      "discuss_prompt": "请开始讨论第{}轮任务的人选(请适当说明你的选择的理由)。本次任务人数为{}，各玩家发言顺序为{}，{}有权力决定最终由哪些玩家执行任务。注意：1.你的发言将公开给其他玩家。2.本次任务人数",
+      "discuss_prompt2": "请{}发言。",
+      "task_member_decision": "请最终确认{}位执行任务的玩家。请回答你选择的玩家的编号。",
+      "vote_step": "任务首领决定玩家{}执行任务，你可以选择同意或者反对，当同意的票数超过2/3时，则选人通过，将执行任务，否则将重新选人直到选人通过。请投票。",
+      "vote_again": "对于当前任务人选，同意票数未超过2/3，请重新讨论任务人选。",
+      "execute_step": "你作为这一轮执行任务的玩家，你可以选择让任务成功或者失败，如果执行任务的玩家都选择任务成功，则蓝色阵营获得一分，如果有一名玩家选择任务失败，则红色阵营获得一分。请选择。",
+      "kill_step1": "你可以选择指认梅林，若指认正确，则红色阵营直接获得胜利，若指认失败你将暴露刺客身份。请问你要指认吗？回答是或者否。",
+      "kill_step2": "请选择你要指认的玩家。",
+      "kill_success": "{}(刺客身份)选择指认{}是梅林，指认成功。",
+      "kill_fail": "{}(刺客身份)选择指认{}是梅林，指认失败。",
+      "task_success": "任务成功。",
+      "task_fail": "执行任务的玩家中，有人投了反对票，任务失败。"
+    }
+  }
+}
