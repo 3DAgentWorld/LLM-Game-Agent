@@ -143,9 +143,9 @@ class Avalon(Game):
             player_i = agent_type.init_instance(**player_params)
             self.player_list.append(player_i)
             self.players[player_i.name] = player_i
-            self.player_mapping[player_i.name] = self.roles[idx]
+            self.player_mapping[player_i.name] = player_i.role
             idx += 1
-
+        self.roles = [player_i.role for player_i in self.player_list]
         idx = self.roles.index(self.role_mapping['merlin'])
         self.merlin_player = self.player_list[idx].name
         idx = self.roles.index(self.role_mapping['percival'])
