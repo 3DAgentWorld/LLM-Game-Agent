@@ -1,5 +1,5 @@
 # LLM-Game-Agent
-Code for the paper: [LLM-Based Agent Society Investigation: Collaboration and Confrontation in Avalon Gameplay](https://arxiv.org/abs/2310.14985)
+Code for our EMNLP 2024 paper: [LLM-Based Agent Society Investigation: Collaboration and Confrontation in Avalon Gameplay](https://arxiv.org/abs/2310.14985)
 
 ![Agent Framework](avalon-agent-framework_v5.jpg)
 
